@@ -6,10 +6,16 @@ body {
   margin: auto;
 }
 
-input, textarea, button {
+h1, h2 {
+  color: #333;
+}
+
+input, textarea, select, button {
   width: 100%;
-  padding: 8px;
-  margin: 5px 0 15px;
+  padding: 10px;
+  margin: 8px 0 16px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 button {
@@ -17,6 +23,11 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 #preview a {
@@ -29,6 +40,7 @@ button {
   border-radius: 4px;
   color: white;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .line { background-color: #00c300; }
@@ -40,4 +52,7 @@ button {
 #code {
   width: 100%;
   font-family: monospace;
+  padding: 10px;
+  background: #eee;
+  border: 1px solid #ccc;
 }
