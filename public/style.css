@@ -1,0 +1,17 @@
+.share-button {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 5px;
+}
+.share-button.line { background-color: #00c300; }
+.share-button.twitter { background-color: #1da1f2; }
+.share-button.facebook { background-color: #4267b2; }
+.share-button.threads { background-color: black; }
+.share-button.reddit { background-color: #ff4500; }
