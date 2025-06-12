@@ -8,13 +8,21 @@
 </head>
 <body>
   <h1>SNS共有ボタンを作ろう</h1>
+
   <form id="shareForm">
     <label>共有したいURL:</label>
-    <input type="text" id="url" placeholder="https://example.com">
-    
+    <input type="text" id="url" placeholder="https://example.com" required>
+
     <label>共有するテキスト:</label>
     <textarea id="text" rows="3" placeholder="例: この記事おすすめ！チェックしてね✨"></textarea>
-    
+
+    <label>表示形式の選択:</label>
+    <select id="displayMode">
+      <option value="text">文字だけ</option>
+      <option value="icon">アイコンだけ</option>
+      <option value="both" selected>アイコン＋文字</option>
+    </select>
+
     <button type="submit">ボタンを生成</button>
   </form>
 
