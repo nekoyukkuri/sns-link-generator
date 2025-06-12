@@ -1,28 +1,43 @@
 body {
   font-family: sans-serif;
-  max-width: 600px;
-  margin: auto;
+  background: #f9f9f9;
   padding: 20px;
-  background: #f8f9fa;
+  max-width: 700px;
+  margin: auto;
 }
 
-input, button {
+input, textarea, button {
   width: 100%;
   padding: 8px;
-  margin: 5px 0;
+  margin: 5px 0 15px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 #preview a {
-  margin-right: 8px;
-  display: inline-block;
+  margin: 5px;
   text-decoration: none;
-  padding: 6px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
   border-radius: 4px;
   color: white;
+  font-weight: bold;
 }
 
 .line { background-color: #00c300; }
 .twitter { background-color: #1da1f2; }
 .facebook { background-color: #4267b2; }
 .threads { background-color: black; }
-.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.reddit { background-color: #ff4500; }
+
+#code {
+  width: 100%;
+  font-family: monospace;
+}
