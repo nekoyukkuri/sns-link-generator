@@ -4,21 +4,24 @@
   <meta charset="UTF-8">
   <title>SNS共有ボタンジェネレーター</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <h1>SNS共有ボタンジェネレーター</h1>
+  <h1>SNS共有ボタンを作ろう</h1>
   <form id="shareForm">
     <label>共有したいURL:</label>
     <input type="text" id="url" placeholder="https://example.com">
-    <label>タイトル（任意）:</label>
-    <input type="text" id="title" placeholder="例: この記事おすすめ！">
+    
+    <label>共有するテキスト:</label>
+    <textarea id="text" rows="3" placeholder="例: この記事おすすめ！チェックしてね✨"></textarea>
+    
     <button type="submit">ボタンを生成</button>
   </form>
 
   <h2>プレビュー</h2>
   <div id="preview"></div>
 
-  <h2>コード</h2>
+  <h2>コピー用コード</h2>
   <textarea id="code" rows="10" readonly></textarea>
 
   <script src="script.js"></script>
